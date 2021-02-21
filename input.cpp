@@ -4,7 +4,8 @@
 
 #include <iostream>
 #include <vector>
-#include <fstream> 
+#include <fstream>
+#include <climits> 
 using namespace std;
 
 int main()
@@ -48,11 +49,11 @@ int main()
   
 
     output_file << "\nQ1: (cin only) What happens when you run the code above? Explain why" << endl;
-    string answer = ""; // enter your answer in between ""
+    string answer = "I entered 1 and the flag is false, and it displayed the value 10. But when I entered 4.5, it says the flag is still false and it extracts 4, and it continues the loop without accepting any other values"; // enter your answer in between ""
     output_file << "Answer Q1: " << answer << endl;
 
     cout << "\nCode for Q2 and Q3" << endl;
-    /* //uncomment when you get to Q2 and Q3
+    //uncomment when you get to Q2 and Q3
     for (int i = 0; i < array_values.size(); i++)
     {
         cout << "\tEnter the value " << array_values.at(i) << endl;
@@ -75,19 +76,18 @@ int main()
         
         cout << "\tYou entered " << val << endl << endl;
     }  
-    */
 
     output_file << "\nQ2: (cin + fail+ignore) What happens when you run the code above? Explain why." << endl;
-    answer = ""; // enter your answer in between ""
+    answer = "I entered 10 and it set the fail flag to false, then I entered 4.5 and it set the fail flag to false, but it shows .5 in the buffer. For abc and a, it sets the fail flag to true and explains that it is not an integer."; // enter your answer in between ""
     output_file << "Answer Q2: " << answer << endl;
 
     output_file << "\nQ3: Is the problem of reading an integer value solved? Explain your reasoning." << endl;
-    answer = ""; // enter your answer in between ""
+    answer = "No, because for 4.5, it set the flag to false and it extracted 4 without saying it is not an integer"; // enter your answer in between ""
     output_file << "Answer Q3: " << answer << endl;
 
     cout << "\nCode for Q4" << endl;
-    // uncomment when you get to Q4
-   /*
+    /* // uncomment when you get to Q4
+   
     for (int i = 0; i < array_values.size(); i++)
     {
         cout << "\tEnter the value " << array_values.at(i) << endl;
@@ -99,9 +99,10 @@ int main()
                             // read more at http://www.cplusplus.com/reference/string/stoi/?kw=stoi
         cout << "\tYou entered " << val << endl << endl;
     }  
-*/
+    */
+
     output_file << "\nQ4: (getline only) What happens when you run the code above? Explain why." << endl;
-    answer = ""; // enter your answer in between ""
+    answer = "I entered 10 and it displays the value, then I entered 4.5 and it displays the value 4. \n Then I entered abc and the program terminates with an error thrown by the stoi function"; // enter your answer in between ""
     output_file << "Answer Q4: " << answer << endl;
 
     // Comment the for loop for Q4 above - leave the answer to Q4
