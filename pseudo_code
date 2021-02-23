@@ -1,1 +1,74 @@
 Add your steps (pseudo-code) for the dice game here.
+
+Display a welcome message
+
+Declare die1 and die2 variables
+Declare a die sum variable which stores the sum of die1 and die2
+Declare a player's points variable that stores value of the die sum when you do not
+roll a 7, 11, 2, 3, or 12.
+
+Create a play game loop:
+Initialize a character variable named start_game
+Display a question asking the user if they want to play
+Receive user input from the player using the start_game character variable
+
+WHILE the user input is either Y or y, start game
+    Initialize your two dice (die1 and die2) that store random values between 1 and 6
+    Initialize your die sum variable that stores the addition of die1 and die2 variables
+
+    IF the sum of the dice is equal to 7 or 11
+        Display a message saying "The sum of your roll is ", followed by the value
+        stored in die sum, followed by ". Congratulations, You Win!"
+        Set the start_game variable to 'N' to temporarily stop the game
+        Display a message asking the user if they want to play again
+        Receive user input using the start_game character variable
+    
+    ELSE IF the sum of the dice is equal to either 2, 3, or 12
+        Display a message saying "The sum of your roll is", followed by the
+        value stored in die sum, followed by ". Sorry, you lose."
+        Set the start_game variable to 'N' to temporarily stop the game
+        Display a message asking the user if they want to play again
+        Receive user input using the start_game character variable
+    
+    ELSE
+        Display a message "The sum of your roll is " followed by the value stored in
+        die sum
+        Initialize a new char variable called new_roll that which allows you to roll
+        the 2 dice again
+        Display a message asking the user to press S to roll the dice again
+        Receive user input using the new_roll character variable
+
+        Create a new loop:
+
+        WHILE the user input is S or s, start the new roll
+            Set the player's points to the value stored in die sum
+            Reinitialize your die1 and die2 variables
+            Initialize a new variable called new_die_sum which will store the sum of
+            die1 and die2 from the new roll that takes place
+
+            IF the new die sum is equal to the player's points
+                Display the player's points
+                Display the sum of your new roll (new die sum)
+                Display a message saying "Congratulations, You Win!"
+                Ask the user if they would like to play again
+                Receive input from the user through the start_game character variable
+
+            ELSE IF the new die sum is equal to 7
+                Display the player's points
+                Display the sum of your new roll (new die sum)
+                Display a message saying "Sorry, you lose."
+                Ask the user if they would like to play again
+                Receive input from the user through the start_game character variable
+
+            ELSE
+                Display the player's points
+                Display the sum of your new roll (new die sum)
+                Display a message telling the user to press S to roll again
+                Receive input from the user through the new roll character variable
+                The program will continue to roll again until either the value of the
+                new roll is equal to the player's points, in which the player wins,
+                or the value of the new roll is equal to 7, in which the player loses
+
+
+
+

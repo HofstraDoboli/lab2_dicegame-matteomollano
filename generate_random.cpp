@@ -30,26 +30,26 @@ int main()
     for (int i = 0; i < 10; i ++)
         cout << rand() << '\t';
     cout << "\nQ1: What is the output of rand(). Why? " << endl;
-    answer = "" ; // 1. Write your answer to Q1 in between " "
+    answer = "The output of rand() is a sequence of 10 random numbers between 0 and RAND_MAX"; // 1. Write your answer to Q1 in between " "
     cout << "Answer Q1: " << answer << endl;
 
     cout << endl;
     for (int i = 0; i < 10; i ++)
         cout << rand()%5 << '\t';
     cout << "\nQ2: What is the output of rand()%5. Why? " << endl;
-    answer = "" ; // 2. Write your answer to Q2 in between " "
+    answer = "The output of rand()%5 is a sequence of 10 random numbers between 0 and 4"; // 2. Write your answer to Q2 in between " "
     cout << "Answer Q2: " << answer << endl;
 
     cout << endl;
     for (int i = 0; i < 10; i ++)
         cout << rand()%5+3 << '\t';
     cout << "\nQ3: What is the output of rand()%5+3. Why?" << endl;
-    answer = "" ; // 3. Write your answer to Q3 in between " "
+    answer = "The output of rand()%5+3 is a sequence of 10 random numbers between 3 and 7"; // 3. Write your answer to Q3 in between " "
     cout << "Answer Q3: " << answer << endl;
 
     // Comment the line srand(time(NULL)); compile and run the program twice
     cout << "\nQ4: What is the output of the program when srand(time(NULL)) is removed. Why" << endl;
-    answer = "" ; // 4. Write your answer to Q4 in between " "
+    answer = "When you remove srand(time(NULL)) and compile twice, the program generates the same sequence of values both times because you are using the same seed value" ; // 4. Write your answer to Q4 in between " "
     cout << "Answer Q4: " << answer << endl;
 
     // 5. Change the rand() expression below to generate a random number 
@@ -58,7 +58,7 @@ int main()
     bool is_error = false; 
     for (int i = 0; i < 50; i ++)
     {
-        int dice_output = rand(); //change this expression so dice_output has a value between 1 and 6
+        int dice_output = rand()%6+1; //change this expression so dice_output has a value between 1 and 6
         if (dice_output < 1 || dice_output > 6)
         {
             cout << "Error: your code does not generate # between 1 and 6" << endl;
