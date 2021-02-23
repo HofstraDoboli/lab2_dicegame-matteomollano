@@ -24,7 +24,7 @@ WHILE the user input is either Y or y, start game
         Receive user input using the start_game character variable
     
     ELSE IF the sum of the dice is equal to either 2, 3, or 12
-        Display a message that saying "The sum of your roll is", followed by the
+        Display a message saying "The sum of your roll is", followed by the
         value stored in die sum, followed by ". Sorry, you lose."
         Set the start_game variable to 'N' to temporarily stop the game
         Display a message asking the user if they want to play again
@@ -48,21 +48,21 @@ WHILE the user input is either Y or y, start game
 
             IF the new die sum is equal to the player's points
                 Display the player's points
-                Display the sum of your new role (new die sum)
+                Display the sum of your new roll (new die sum)
                 Display a message saying "Congratulations, You Win!"
                 Ask the user if they would like to play again
                 Receive input from the user through the start_game character variable
 
             ELSE IF the new die sum is equal to 7
                 Display the player's points
-                Display the sum of your new role (new die sum)
+                Display the sum of your new roll (new die sum)
                 Display a message saying "Sorry, you lose."
                 Ask the user if they would like to play again
                 Receive input from the user through the start_game character variable
 
             ELSE
                 Display the player's points
-                Display the sum of your new role (new die sum)
+                Display the sum of your new roll (new die sum)
                 Display a message telling the user to press S to roll again
                 Receive input from the user through the new roll character variable
                 The program will continue to roll again until either the value of the
